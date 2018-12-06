@@ -15,3 +15,17 @@ for index, element in enumerate(list):
        element[3] = ""
 
 
+def main():
+    print("Welcome to songs to learn--ZhuKunBo")
+    menu = show_menu()
+    print("Please choose a option")
+    choice = input("Enter a option:").upper()
+
+def show_menu():
+    print("Menu:")
+    print("L","-","List songs")
+    print("A","-", "Add new song")
+    print("C","-","Complete a song")
+    print("Q","-","Quit")
+
+main()
