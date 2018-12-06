@@ -31,6 +31,10 @@ def main():
             choice = add_song()
             menu = show_menu()
             choice = input("Enter a option:").upper()
+        elif choice == "C":
+            choice = complete_song()
+            menu = show_menu()
+            choice = input("Enter a option:").upper()
 
 def show_menu():
     print("Menu:")
@@ -50,6 +54,14 @@ def add_song():
     require = "*"
     adds.append(require)
     list.append(adds)
+
+def complete_song():
+    complete = int(input("Enter the number of a song to mark as learned:"))
+    if list[complete][3] == "*":
+        list[complete][3] = " "
+        print("the song learned successfully")
+    elif list[complete][3] == " ":
+        print("songs already learned")
 
 
 
