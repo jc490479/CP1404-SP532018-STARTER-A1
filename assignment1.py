@@ -27,6 +27,10 @@ def main():
                 (item[3], item[0], item[1], item[2]))
             menu = show_menu()
             choice = input("Enter a option:").upper()
+        elif choice == "A":
+            choice = add_song()
+            menu = show_menu()
+            choice = input("Enter a option:").upper()
 
 def show_menu():
     print("Menu:")
@@ -34,6 +38,18 @@ def show_menu():
     print("A","-", "Add new song")
     print("C","-","Complete a song")
     print("Q","-","Quit")
+
+def add_song():
+    adds = []
+    title = input("Enter the song's title,input can not be blank:")
+    adds.append(title)
+    writer = input("Enter the song's writer,input can not be blank:")
+    adds.append(writer)
+    year = input("Enter the year,number must >= 0:")
+    adds.append(year)
+    require = "*"
+    adds.append(require)
+    list.append(adds)
 
 
 
