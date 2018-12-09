@@ -35,8 +35,7 @@ while True:
 while complete < 0:
     Display"number must >= 0"
     omplete = int(input("Enter the number of a song to mark as learned:"))
-
-if list[complete][3] == " ", then
+ if list[complete][3] == " ", then
     Display""you have already learned {}".format(list[complete][0])"
 else:
     list[complete][3] = " "
@@ -51,7 +50,6 @@ list = []
 csv_reader = csv.reader(open("songs.csv"))
 for row in csv_reader:
     list.append(row)
-
 
 for index, element in enumerate(list):
     if element[3] == "y":
